@@ -1,0 +1,11 @@
+{
+  "dataset_version": "insurance-0.0.1",
+  "entries": [
+    {"value": "900101-1234560", "pii_type": "RRN", "customer_id": "C0001", "sources": ["records/customers.json"]},
+    {"value": "010-0001-0001", "pii_type": "PHONE", "customer_id": "C0001", "sources": ["records/customers.json"]},
+    {"value": "kim.gasang@example.com", "pii_type": "EMAIL", "customer_id": "C0001", "sources": ["records/customers.json"]},
+    {"value": "920202-2345670", "pii_type": "RRN", "customer_id": "C0002", "sources": ["records/customers.json"]},
+    {"value": "010-0002-0002", "pii_type": "PHONE", "customer_id": "C0002", "sources": ["records/customers.json"]},
+    {"value": "lee.hapseong@example.com", "pii_type": "EMAIL", "customer_id": "C0002", "sources": ["records/customers.json"]}
+  ]
+}

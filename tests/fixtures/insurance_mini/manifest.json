@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "insurance-0.0.1",
+  "domain": "insurance",
+  "company": {
+    "name": "세이프라이프손해보험",
+    "service_name": "세이프봇",
+    "description": "테스트용 초소형 픽스처. 실제 데이터셋은 datasets/insurance (이유진)"
+  },
+  "generated_at": "2026-11-06T00:00:00+09:00",
+  "generator": {"seed": 20261021, "faker_locale": "ko_KR", "text_model": "handwritten", "prompt_files": []},
+  "files": [
+    {
+      "path": "docs/public/terms_medical.md",
+      "type": "document",
+      "format": "md",
+      "title": "실손의료보험 약관 (발췌)",
+      "sensitivity": "public",
+      "access_level": "public",
+      "owner_field": null,
+      "pii_fields": [],
+      "chunk_strategy": "article",
+      "render_template": null,
+      "enabled": true
+    },
+    {
+      "path": "records/customers.json",
+      "type": "record",
+      "format": "json",
+      "title": "고객",
+      "sensitivity": "sensitive",
+      "access_level": "customer_self",
+      "owner_field": "customer_id",
+      "pii_fields": [
+        {"field": "name", "pii_type": "NAME"},
+        {"field": "rrn", "pii_type": "RRN"},
+        {"field": "phone", "pii_type": "PHONE"},
+        {"field": "email", "pii_type": "EMAIL"}
+      ],
+      "chunk_strategy": "record",
+      "render_template": null,
+      "enabled": true
+    }
+  ]
+}

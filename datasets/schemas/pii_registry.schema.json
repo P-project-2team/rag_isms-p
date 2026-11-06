@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pii_registry.schema.json",
+  "title": "카나리 PII 목록 (설계서 v2 §6.3.12)",
+  "description": "합성 PII 전부를 등록한다. 진단 엔진은 응답·로그·저장소에서 이 값을 정확 일치·정규화 일치로 찾는다.",
+  "type": "object",
+  "required": ["dataset_version", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "dataset_version": {"type": "string"},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["value", "pii_type"],
+        "additionalProperties": false,
+        "properties": {
+          "value": {"type": "string", "minLength": 1},
+          "pii_type": {"$ref": "#/$defs/pii_type"},
+          "customer_id": {"type": ["string", "null"]},
+          "sources": {"type": "array", "items": {"type": "string"}},
+          "context": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "pii_type": {
+      "type": "string",
+      "enum": ["RRN", "PASSPORT", "DRIVER", "FRN", "HEALTH", "ACCOUNT", "CARD", "NAME", "PHONE", "EMAIL",
+               "ADDRESS", "BIRTH", "ACCIDENT", "ORDER", "PATIENT_ID", "CIVIL_ID"]
+    }
+  }
+}
