@@ -1,0 +1,27 @@
+# 전체 실행용 의존성 (RAG·UI·LLM 포함). 개발·CI 최소 구성은 requirements-dev.txt.
+# 처음 설치할 때 충돌이 나면 버전을 맞춘 뒤 PR로 고정값을 갱신한다.
+-r requirements-dev.txt
+
+# UI
+streamlit==1.41.1
+plotly==5.24.1
+
+# RAG (설계서 v2 §3.1)
+langchain==0.3.13
+langchain-community==0.3.13
+langchain-openai==0.2.14
+langchain-chroma==0.1.4
+langchain-huggingface==0.1.2
+chromadb==0.5.23
+sentence-transformers==3.3.1
+pymupdf==1.25.1
+
+# LLM SDK
+openai==1.58.1
+anthropic==0.42.0
+
+# 데이터 생성·보고서
+faker==33.1.0
+jinja2==3.1.5
+pandas==2.2.3
+openpyxl==3.1.5

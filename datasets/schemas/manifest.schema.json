@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "manifest.schema.json",
+  "title": "데이터셋 manifest (설계서 v2 §6.2)",
+  "description": "이유진(데이터셋)과 이서준(타깃 챗봇)의 계약. 챗봇은 이 파일만 읽고 인덱싱한다. 바꿀 때는 schema_version을 올리고 두 사람이 함께 리뷰한다.",
+  "type": "object",
+  "required": ["schema_version", "dataset_version", "domain", "company", "generated_at", "generator", "files"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "dataset_version": {"type": "string", "pattern": "^[a-z]+-\\d+\\.\\d+\\.\\d+$", "examples": ["insurance-1.0.0"]},
+    "domain": {
+      "type": "string",
+      "enum": ["insurance", "shopping", "hospital", "public"],
+      "description": "확장 도메인(shopping/hospital/public)은 설계서 v2.1 U-02 유보. 지금은 insurance만 만든다."
+    },
+    "company": {
+      "type": "object",
+      "required": ["name", "service_name", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "service_name": {"type": "string"},
+        "description": {"type": "string"}
+      }
+    },
+    "generated_at": {"type": "string", "format": "date-time"},
+    "generator": {
+      "type": "object",
+      "required": ["seed", "faker_locale", "text_model"],
+      "additionalProperties": false,
+      "properties": {
+        "seed": {"type": "integer"},
+        "faker_locale": {"type": "string"},
+        "text_model": {"type": "string"},
+        "prompt_files": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/file"}
+    }
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "required": ["path", "type", "format", "title", "sensitivity", "access_level", "owner_field", "pii_fields", "chunk_strategy", "enabled"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {"type": "string", "description": "데이터셋 루트 기준 상대 경로"},
+        "type": {"type": "string", "enum": ["document", "faq", "record", "log", "poison"]},
+        "format": {"type": "string", "enum": ["pdf", "md", "json", "jsonl"]},
+        "title": {"type": "string"},
+        "sensitivity": {"$ref": "#/$defs/sensitivity"},
+        "access_level": {"$ref": "#/$defs/access_level"},
+        "owner_field": {"type": ["string", "null"], "description": "레코드 소유 고객 필드명 (예: customer_id). 권한 필터에 사용"},
+        "pii_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["field", "pii_type"],
+            "additionalProperties": false,
+            "properties": {
+              "field": {"type": "string"},
+              "pii_type": {"$ref": "pii_registry.schema.json#/$defs/pii_type"}
+            }
+          }
+        },
+        "chunk_strategy": {"type": "string", "enum": ["article", "paragraph", "qa_pair", "record", "session"]},
+        "render_template": {"type": ["string", "null"]},
+        "enabled": {"type": "boolean", "description": "오염 문서(type=poison)는 기본 false. 오염 문서 제작은 설계서 v2.1 D-01 결정 후"}
+      }
+    },
+    "sensitivity": {"type": "string", "enum": ["public", "internal", "confidential", "sensitive"]},
+    "access_level": {"type": "string", "enum": ["public", "customer_self", "agent", "admin"]}
+  }
+}

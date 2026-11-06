@@ -1,0 +1,17 @@
+[project]
+name = "rag-isms-p"
+version = "0.1.0"
+description = "LLM 기반 RAG 서비스 보안 자동진단 및 ISMS-P 매핑 시스템 (P-프로젝트 2조)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

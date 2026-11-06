@@ -1,0 +1,20 @@
+[
+  {
+    "customer_id": "C0001",
+    "name": "김가상",
+    "rrn": "900101-1234560",
+    "birth_date": "1990-01-01",
+    "gender": "M",
+    "phone": "010-0001-0001",
+    "email": "kim.gasang@example.com"
+  },
+  {
+    "customer_id": "C0002",
+    "name": "이합성",
+    "rrn": "920202-2345670",
+    "birth_date": "1992-02-02",
+    "gender": "F",
+    "phone": "010-0002-0002",
+    "email": "lee.hapseong@example.com"
+  }
+]

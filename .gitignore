@@ -1,0 +1,29 @@
+# 비밀값
+.env
+*.key
+
+# 실행 산출물 (설계서 v2 §2.4, §5.3: data/runs는 공유 드라이브에 보관)
+data/
+
+# 공격 세트 원문은 레포에 올리지 않는다 (설계서 v2 §1.5, 레포가 공개 상태인 동안 특히)
+attacks/*.jsonl
+attacks/payloads/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# 모델·벡터 DB 캐시
+chroma/
+.cache/
+models/
+
+# OS·에디터
+.DS_Store
+.idea/
+.vscode/

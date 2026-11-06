@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "users.schema.json",
+  "title": "가상 로그인 사용자 (설계서 v2 §6.3.10)",
+  "description": "데모용 가상 사용자. 실제 인증이 아니다 (객관식 2.5.3 점검 대상 여부는 설계서 v2.1 U-03 유보).",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": ["user_id", "display_name", "role", "customer_id", "agent_id"],
+    "additionalProperties": false,
+    "properties": {
+      "user_id": {"type": "string"},
+      "display_name": {"type": "string"},
+      "role": {"type": "string", "enum": ["guest", "customer", "agent", "admin"]},
+      "customer_id": {"type": ["string", "null"]},
+      "agent_id": {"type": ["string", "null"]},
+      "password_hint": {"type": "string", "description": "데모용 표시값. 실제 비밀번호 아님"}
+    },
+    "allOf": [
+      {"if": {"properties": {"role": {"const": "customer"}}}, "then": {"properties": {"customer_id": {"type": "string"}}}},
+      {"if": {"properties": {"role": {"const": "agent"}}}, "then": {"properties": {"agent_id": {"type": "string"}}}}
+    ]
+  }
+}
