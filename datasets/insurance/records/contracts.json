@@ -1,0 +1,133 @@
+[
+  {
+    "contract_id": "CT-2024-00001",
+    "customer_id": "C0001",
+    "insured_id": "C0001",
+    "product_code": "SL-MED",
+    "product_name": "세이프라이프 실손의료보험",
+    "status": "유지",
+    "start_date": "2024-02-10",
+    "end_date": "2044-02-09",
+    "monthly_premium": 32000,
+    "payment_method": "자동이체",
+    "riders": [
+      "비급여 도수치료 특약"
+    ],
+    "beneficiary_name": "김가상",
+    "beneficiary_relation": "본인",
+    "agent_id": "S001",
+    "vehicle": null
+  },
+  {
+    "contract_id": "CT-2024-00002",
+    "customer_id": "C0001",
+    "insured_id": "C0001",
+    "product_code": "SL-CAR",
+    "product_name": "세이프라이프 자동차보험",
+    "status": "유지",
+    "start_date": "2025-02-10",
+    "end_date": "2026-02-09",
+    "monthly_premium": 78000,
+    "payment_method": "카드",
+    "riders": [
+      "긴급출동 특약"
+    ],
+    "beneficiary_name": "김가상",
+    "beneficiary_relation": "본인",
+    "agent_id": "S001",
+    "vehicle": {
+      "plate": "99가0101",
+      "model": "중형 세단"
+    }
+  },
+  {
+    "contract_id": "CT-2024-00003",
+    "customer_id": "C0002",
+    "insured_id": "C0002",
+    "product_code": "SL-MED",
+    "product_name": "세이프라이프 실손의료보험",
+    "status": "유지",
+    "start_date": "2024-03-05",
+    "end_date": "2044-03-04",
+    "monthly_premium": 28000,
+    "payment_method": "자동이체",
+    "riders": [],
+    "beneficiary_name": "이합성",
+    "beneficiary_relation": "본인",
+    "agent_id": "S002",
+    "vehicle": null
+  },
+  {
+    "contract_id": "CT-2024-00004",
+    "customer_id": "C0002",
+    "insured_id": "C0002",
+    "product_code": "SL-CAN",
+    "product_name": "세이프라이프 암진단보험",
+    "status": "유지",
+    "start_date": "2024-03-05",
+    "end_date": "2054-03-04",
+    "monthly_premium": 41000,
+    "payment_method": "자동이체",
+    "riders": [
+      "암 수술비 특약"
+    ],
+    "beneficiary_name": "이가족",
+    "beneficiary_relation": "배우자",
+    "agent_id": "S002",
+    "vehicle": null
+  },
+  {
+    "contract_id": "CT-2024-00005",
+    "customer_id": "C0003",
+    "insured_id": "C0003",
+    "product_code": "SL-CAR",
+    "product_name": "세이프라이프 자동차보험",
+    "status": "유지",
+    "start_date": "2025-05-20",
+    "end_date": "2026-05-19",
+    "monthly_premium": 112000,
+    "payment_method": "자동이체",
+    "riders": [],
+    "beneficiary_name": "박모의",
+    "beneficiary_relation": "본인",
+    "agent_id": "S001",
+    "vehicle": {
+      "plate": "99나0303",
+      "model": "1톤 화물차"
+    }
+  },
+  {
+    "contract_id": "CT-2024-00006",
+    "customer_id": "C0004",
+    "insured_id": "C0004",
+    "product_code": "SL-MED",
+    "product_name": "세이프라이프 실손의료보험",
+    "status": "실효",
+    "start_date": "2024-06-01",
+    "end_date": "2044-05-31",
+    "monthly_premium": 19000,
+    "payment_method": "자동이체",
+    "riders": [],
+    "beneficiary_name": "최예시",
+    "beneficiary_relation": "본인",
+    "agent_id": "S002",
+    "vehicle": null
+  },
+  {
+    "contract_id": "CT-2024-00007",
+    "customer_id": "C0005",
+    "insured_id": "C0005",
+    "product_code": "SL-CAN",
+    "product_name": "세이프라이프 암진단보험",
+    "status": "유지",
+    "start_date": "2024-08-14",
+    "end_date": "2054-08-13",
+    "monthly_premium": 36000,
+    "payment_method": "카드",
+    "riders": [],
+    "beneficiary_name": "박보호",
+    "beneficiary_relation": "부모",
+    "agent_id": "S001",
+    "vehicle": null
+  }
+]
