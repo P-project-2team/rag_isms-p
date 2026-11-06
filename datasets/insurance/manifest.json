@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "insurance-0.1.0",
+  "domain": "insurance",
+  "company": {
+    "name": "세이프라이프손해보험",
+    "service_name": "세이프봇",
+    "description": "가상 손해보험사 고객상담 RAG 챗봇. 소량 샘플(고객 5명) — 이서준 챗봇 개발 착수용"
+  },
+  "generated_at": "2026-11-07T03:00:00+09:00",
+  "generator": {
+    "seed": 20261021,
+    "faker_locale": "ko_KR",
+    "text_model": "handwritten",
+    "prompt_files": []
+  },
+  "files": [
+    {
+      "path": "docs/public/terms_medical.md",
+      "type": "document",
+      "format": "md",
+      "title": "세이프라이프 실손의료보험 약관",
+      "sensitivity": "public",
+      "access_level": "public",
+      "owner_field": null,
+      "pii_fields": [],
+      "chunk_strategy": "article",
+      "render_template": null,
+      "enabled": true
+    },
+    {
+      "path": "records/customers.json",
+      "type": "record",
+      "format": "json",
+      "title": "고객",
+      "sensitivity": "sensitive",
+      "access_level": "customer_self",
+      "owner_field": "customer_id",
+      "pii_fields": [
+        {
+          "field": "name",
+          "pii_type": "NAME"
+        },
+        {
+          "field": "rrn",
+          "pii_type": "RRN"
+        },
+        {
+          "field": "birth_date",
+          "pii_type": "BIRTH"
+        },
+        {
+          "field": "phone",
+          "pii_type": "PHONE"
+        },
+        {
+          "field": "email",
+          "pii_type": "EMAIL"
+        },
+        {
+          "field": "address",
+          "pii_type": "ADDRESS"
+        },
+        {
+          "field": "bank_account",
+          "pii_type": "ACCOUNT"
+        }
+      ],
+      "chunk_strategy": "record",
+      "render_template": null,
+      "enabled": true
+    },
+    {
+      "path": "records/contracts.json",
+      "type": "record",
+      "format": "json",
+      "title": "계약",
+      "sensitivity": "confidential",
+      "access_level": "customer_self",
+      "owner_field": "customer_id",
+      "pii_fields": [
+        {
+          "field": "beneficiary_name",
+          "pii_type": "NAME"
+        }
+      ],
+      "chunk_strategy": "record",
+      "render_template": null,
+      "enabled": true
+    },
+    {
+      "path": "records/claims.jsonl",
+      "type": "record",
+      "format": "jsonl",
+      "title": "보험금 청구 (원본)",
+      "sensitivity": "sensitive",
+      "access_level": "customer_self",
+      "owner_field": "customer_id",
+      "pii_fields": [
+        {
+          "field": "diagnosis_code",
+          "pii_type": "HEALTH"
+        },
+        {
+          "field": "diagnosis_name",
+          "pii_type": "HEALTH"
+        },
+        {
+          "field": "treatment_detail",
+          "pii_type": "HEALTH"
+        },
+        {
+          "field": "accident_description",
+          "pii_type": "ACCIDENT"
+        },
+        {
+          "field": "payout_account",
+          "pii_type": "ACCOUNT"
+        },
+        {
+          "field": "rrn",
+          "pii_type": "RRN"
+        }
+      ],
+      "chunk_strategy": "record",
+      "render_template": null,
+      "enabled": true
+    }
+  ]
+}

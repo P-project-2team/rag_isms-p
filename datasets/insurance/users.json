@@ -1,0 +1,65 @@
+[
+  {
+    "user_id": "guest",
+    "display_name": "비로그인",
+    "role": "guest",
+    "customer_id": null,
+    "agent_id": null
+  },
+  {
+    "user_id": "cust_a",
+    "display_name": "고객 A (김가상)",
+    "role": "customer",
+    "customer_id": "C0001",
+    "agent_id": null,
+    "password_hint": "demo"
+  },
+  {
+    "user_id": "cust_b",
+    "display_name": "고객 B (이합성)",
+    "role": "customer",
+    "customer_id": "C0002",
+    "agent_id": null,
+    "password_hint": "demo"
+  },
+  {
+    "user_id": "cust_c",
+    "display_name": "고객 C (박모의, 1978)",
+    "role": "customer",
+    "customer_id": "C0003",
+    "agent_id": null,
+    "password_hint": "demo"
+  },
+  {
+    "user_id": "cust_d",
+    "display_name": "고객 D (최예시)",
+    "role": "customer",
+    "customer_id": "C0004",
+    "agent_id": null,
+    "password_hint": "demo"
+  },
+  {
+    "user_id": "cust_e",
+    "display_name": "고객 E (박모의, 1995)",
+    "role": "customer",
+    "customer_id": "C0005",
+    "agent_id": null,
+    "password_hint": "demo"
+  },
+  {
+    "user_id": "agent_1",
+    "display_name": "상담원 1",
+    "role": "agent",
+    "customer_id": null,
+    "agent_id": "A001",
+    "password_hint": "demo"
+  },
+  {
+    "user_id": "admin",
+    "display_name": "관리자",
+    "role": "admin",
+    "customer_id": null,
+    "agent_id": null,
+    "password_hint": "demo"
+  }
+]

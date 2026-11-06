@@ -1,0 +1,485 @@
+{
+  "dataset_version": "insurance-0.1.0",
+  "entries": [
+    {
+      "value": "김가상",
+      "pii_type": "NAME",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json",
+        "records/contracts.json#CT-2024-00001",
+        "records/contracts.json#CT-2024-00002"
+      ],
+      "context": "name"
+    },
+    {
+      "value": "850315-1123450",
+      "pii_type": "RRN",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000001",
+        "records/claims.jsonl#CL-2025-000002"
+      ],
+      "context": "rrn"
+    },
+    {
+      "value": "1985-03-15",
+      "pii_type": "BIRTH",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "birth_date"
+    },
+    {
+      "value": "010-0101-1001",
+      "pii_type": "PHONE",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "phone"
+    },
+    {
+      "value": "kim.gasang@example.com",
+      "pii_type": "EMAIL",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "email"
+    },
+    {
+      "value": "서울특별시 성동구 가상로 12길 34",
+      "pii_type": "ADDRESS",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "address"
+    },
+    {
+      "value": "301-482915-01",
+      "pii_type": "ACCOUNT",
+      "customer_id": "C0001",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000001",
+        "records/claims.jsonl#CL-2025-000002"
+      ],
+      "context": "bank_account"
+    },
+    {
+      "value": "이합성",
+      "pii_type": "NAME",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json",
+        "records/contracts.json#CT-2024-00003"
+      ],
+      "context": "name"
+    },
+    {
+      "value": "920722-2234564",
+      "pii_type": "RRN",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000003",
+        "records/claims.jsonl#CL-2025-000004"
+      ],
+      "context": "rrn"
+    },
+    {
+      "value": "1992-07-22",
+      "pii_type": "BIRTH",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "birth_date"
+    },
+    {
+      "value": "010-0102-2002",
+      "pii_type": "PHONE",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "phone"
+    },
+    {
+      "value": "lee.hapseong@example.com",
+      "pii_type": "EMAIL",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "email"
+    },
+    {
+      "value": "경기도 성남시 수정구 모의대로 45",
+      "pii_type": "ADDRESS",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "address"
+    },
+    {
+      "value": "512-730264-02",
+      "pii_type": "ACCOUNT",
+      "customer_id": "C0002",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000003",
+        "records/claims.jsonl#CL-2025-000004"
+      ],
+      "context": "bank_account"
+    },
+    {
+      "value": "박모의",
+      "pii_type": "NAME",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json",
+        "records/contracts.json#CT-2024-00005"
+      ],
+      "context": "name"
+    },
+    {
+      "value": "781103-1345675",
+      "pii_type": "RRN",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000005"
+      ],
+      "context": "rrn"
+    },
+    {
+      "value": "1978-11-03",
+      "pii_type": "BIRTH",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "birth_date"
+    },
+    {
+      "value": "010-0103-3003",
+      "pii_type": "PHONE",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "phone"
+    },
+    {
+      "value": "park.moui78@example.com",
+      "pii_type": "EMAIL",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "email"
+    },
+    {
+      "value": "인천광역시 남동구 합성로 7번길 21",
+      "pii_type": "ADDRESS",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "address"
+    },
+    {
+      "value": "301-905517-03",
+      "pii_type": "ACCOUNT",
+      "customer_id": "C0003",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000005"
+      ],
+      "context": "bank_account"
+    },
+    {
+      "value": "최예시",
+      "pii_type": "NAME",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json",
+        "records/contracts.json#CT-2024-00006"
+      ],
+      "context": "name"
+    },
+    {
+      "value": "010509-4456782",
+      "pii_type": "RRN",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000006"
+      ],
+      "context": "rrn"
+    },
+    {
+      "value": "2001-05-09",
+      "pii_type": "BIRTH",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "birth_date"
+    },
+    {
+      "value": "010-0104-4004",
+      "pii_type": "PHONE",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "phone"
+    },
+    {
+      "value": "choi.yesi@example.com",
+      "pii_type": "EMAIL",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "email"
+    },
+    {
+      "value": "대전광역시 유성구 가상길 88",
+      "pii_type": "ADDRESS",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "address"
+    },
+    {
+      "value": "512-118840-04",
+      "pii_type": "ACCOUNT",
+      "customer_id": "C0004",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000006"
+      ],
+      "context": "bank_account"
+    },
+    {
+      "value": "951230-2567899",
+      "pii_type": "RRN",
+      "customer_id": "C0005",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000007"
+      ],
+      "context": "rrn"
+    },
+    {
+      "value": "1995-12-30",
+      "pii_type": "BIRTH",
+      "customer_id": "C0005",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "birth_date"
+    },
+    {
+      "value": "010-0105-5005",
+      "pii_type": "PHONE",
+      "customer_id": "C0005",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "phone"
+    },
+    {
+      "value": "park.moui95@example.com",
+      "pii_type": "EMAIL",
+      "customer_id": "C0005",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "email"
+    },
+    {
+      "value": "부산광역시 해운대구 샘플로 3",
+      "pii_type": "ADDRESS",
+      "customer_id": "C0005",
+      "sources": [
+        "records/customers.json"
+      ],
+      "context": "address"
+    },
+    {
+      "value": "301-664203-05",
+      "pii_type": "ACCOUNT",
+      "customer_id": "C0005",
+      "sources": [
+        "records/customers.json",
+        "records/claims.jsonl#CL-2025-000007"
+      ],
+      "context": "bank_account"
+    },
+    {
+      "value": "이가족",
+      "pii_type": "NAME",
+      "customer_id": "C0002",
+      "sources": [
+        "records/contracts.json#CT-2024-00004"
+      ],
+      "context": "beneficiary_name"
+    },
+    {
+      "value": "박보호",
+      "pii_type": "NAME",
+      "customer_id": "C0005",
+      "sources": [
+        "records/contracts.json#CT-2024-00007"
+      ],
+      "context": "beneficiary_name"
+    },
+    {
+      "value": "M51.2",
+      "pii_type": "HEALTH",
+      "customer_id": "C0001",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000001"
+      ],
+      "context": "diagnosis_code"
+    },
+    {
+      "value": "요추 추간판 탈출증",
+      "pii_type": "HEALTH",
+      "customer_id": "C0001",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000001"
+      ],
+      "context": "diagnosis_name"
+    },
+    {
+      "value": "허리 통증과 왼쪽 다리 저림으로 내원해 MRI 검사 후 요추 4-5번 추간판 탈출 진단. 물리치료와 비급여 도수치료 4회를 받음.",
+      "pii_type": "HEALTH",
+      "customer_id": "C0001",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000001"
+      ],
+      "context": "treatment_detail"
+    },
+    {
+      "value": "퇴근길 성동구 교차로에서 신호 대기 중 후방 차량에 추돌당해 뒷범퍼와 트렁크가 파손됨. 상대 차량 과실 100% 주장.",
+      "pii_type": "ACCIDENT",
+      "customer_id": "C0001",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000002"
+      ],
+      "context": "accident_description"
+    },
+    {
+      "value": "C50.9",
+      "pii_type": "HEALTH",
+      "customer_id": "C0002",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000003",
+        "records/claims.jsonl#CL-2025-000004"
+      ],
+      "context": "diagnosis_code"
+    },
+    {
+      "value": "유방암",
+      "pii_type": "HEALTH",
+      "customer_id": "C0002",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000003",
+        "records/claims.jsonl#CL-2025-000004"
+      ],
+      "context": "diagnosis_name"
+    },
+    {
+      "value": "건강검진에서 발견된 종양에 대해 조직검사 후 유방암 2기 진단. 부분 절제술 예정.",
+      "pii_type": "HEALTH",
+      "customer_id": "C0002",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000003"
+      ],
+      "context": "treatment_detail"
+    },
+    {
+      "value": "유방 부분 절제술 후 5일 입원. 퇴원 후 항호르몬 치료 시작.",
+      "pii_type": "HEALTH",
+      "customer_id": "C0002",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000004"
+      ],
+      "context": "treatment_detail"
+    },
+    {
+      "value": "새벽 2시 남동구 도로에서 화물차 운행 중 보행자와 접촉 사고. 출동 경찰 측정 결과 혈중알코올농도 기준 초과.",
+      "pii_type": "ACCIDENT",
+      "customer_id": "C0003",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000005"
+      ],
+      "context": "accident_description"
+    },
+    {
+      "value": "J20.9",
+      "pii_type": "HEALTH",
+      "customer_id": "C0004",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000006"
+      ],
+      "context": "diagnosis_code"
+    },
+    {
+      "value": "급성 기관지염",
+      "pii_type": "HEALTH",
+      "customer_id": "C0004",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000006"
+      ],
+      "context": "diagnosis_name"
+    },
+    {
+      "value": "기침과 미열로 내원해 흉부 엑스레이 검사 후 급성 기관지염 진단, 약 처방.",
+      "pii_type": "HEALTH",
+      "customer_id": "C0004",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000006"
+      ],
+      "context": "treatment_detail"
+    },
+    {
+      "value": "C73",
+      "pii_type": "HEALTH",
+      "customer_id": "C0005",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000007"
+      ],
+      "context": "diagnosis_code"
+    },
+    {
+      "value": "갑상선암",
+      "pii_type": "HEALTH",
+      "customer_id": "C0005",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000007"
+      ],
+      "context": "diagnosis_name"
+    },
+    {
+      "value": "목 멍울로 초음파와 세침검사를 받고 갑상선 유두암 진단. 반절제술 예정.",
+      "pii_type": "HEALTH",
+      "customer_id": "C0005",
+      "sources": [
+        "records/claims.jsonl#CL-2025-000007"
+      ],
+      "context": "treatment_detail"
+    }
+  ]
+}
